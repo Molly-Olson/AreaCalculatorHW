@@ -33,6 +33,7 @@
             lblHeight = new Label();
             txtHeight = new TextBox();
             btnCalculate = new Button();
+            lblTotal = new Label();
             SuspendLayout();
             // 
             // txtWidth
@@ -71,7 +72,7 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(137, 97);
+            btnCalculate.Location = new Point(137, 123);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(94, 29);
             btnCalculate.TabIndex = 4;
@@ -79,11 +80,21 @@
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Location = new Point(156, 100);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(57, 20);
+            lblTotal.TabIndex = 5;
+            lblTotal.Text = "Total: 0";
+            // 
             // frmArea
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(280, 185);
+            Controls.Add(lblTotal);
             Controls.Add(btnCalculate);
             Controls.Add(lblHeight);
             Controls.Add(txtHeight);
@@ -103,5 +114,6 @@
         private Label lblHeight;
         private TextBox txtHeight;
         private Button btnCalculate;
+        private Label lblTotal;
     }
 }
